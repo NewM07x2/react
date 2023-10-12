@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  background-color: lightgray;
 }
 
 .App-logo {
@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+
+.title {
+  text-align: left;
+  margin-left: 5px!important;
+}
+.header {
+  background-color: lightcoral;
+  height: 50px;
+  text-align: center;
+}
+.footer {
+  background-color: lightblue;
+  height: 150px;
+  text-align: center;
+}
+.main {
+  background-color: white;
+  text-align: center;
+}
+
+.title-label {
+  font-weight: bold!important;
+  font-size: 36px!important;
+  /* font-family: 'M PLUS Rounded 1c', sans-serif!important; */
+  color: white!important;
+  margin-left: 5px;
+}
+.icon-label {
+  font-size: 36px!important;
+  display: flex;
+  text-align: center;
+  
+}
+.title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  font-size: 36px;
+  padding: 10px;
+}
+

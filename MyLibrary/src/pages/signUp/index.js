@@ -1,13 +1,13 @@
 import React from "react"
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-const Header = () => {
+const Login = () => {
   return (
-    <div className="header">
+    <div className="login">
       <AppBar position="static">
         <Toolbar>
           <AutoStoriesIcon />
-          <Typography variant="h6" style={{ flexGrow: 1 }} className="title">My Library</Typography>
+          <Typography variant="h6" style={{ flexGrow: 1 }} className="login">My Library</Typography>
           <Button color="inherit">Login</Button>
           <Button color="inherit">Sing Up</Button>
           <Button color="inherit">About</Button>
@@ -16,4 +16,4 @@ const Header = () => {
     </div>
   );
 }
-export default Header
+export default Login
