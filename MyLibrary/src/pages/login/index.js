@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
@@ -7,7 +8,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -22,9 +22,8 @@ const Copyright = (props) => {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'masato nitta © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
+      <Link to="/">Home</Link>
+      {' '}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
@@ -124,10 +123,12 @@ export default function Login() {
                 id="password"
                 autoComplete="current-password"
               />
-              <FormControlLabel
-                control={<Checkbox value="remember" color="primary" checked={rememberChecked} onChange={handleRememberCheckboxChange}/>}
-                label="Remember me"
-              />
+              <Box sx={{ textAlign: 'left' }}>
+                <FormControlLabel
+                  control={<Checkbox value="remember" color="primary" checked={rememberChecked} onChange={handleRememberCheckboxChange}/>}
+                  label="Remember me" labelPlacement="end"
+                />
+              </Box>
               <Button
                 type="submit"
                 fullWidth
@@ -137,7 +138,7 @@ export default function Login() {
                 Sign In
               </Button>
               <Grid container>
-                <Grid item xs>
+                <Grid item xs className='text-align-left'>
                   <Link href="#" variant="body2">
                     Forgot password?
                   </Link>
